@@ -1,26 +1,42 @@
 # Day 01 — Invoice Generator
 
-🎯 **Objetivo**  
+## 📦 Overview
 
-Simular a geração de uma fatura simples com:
+Primeiro exercício do desafio **30 Days of COBOL**.
 
-- Nome do cliente  
-- Produto  
-- Quantidade  
-- Preço unitário  
-- IVA (%)  
-- Cálculo de subtotal  
-- Cálculo de imposto  
-- Total final formatado  
+Implementação de um gerador de faturas simples com cálculo automático de:
 
-Este exercício é real, prático e empresarial.
+- Subtotal
+- IVA
+- Total final
+
+O objetivo é consolidar fundamentos de estrutura COBOL e operações aritméticas com decimais.
 
 ---
 
-## 🧠 Modelo de Dados
+## 🎯 Functional Requirements
+
+O programa deve:
+
+1. Receber via input:
+   - Nome do cliente
+   - Produto
+   - Quantidade
+   - Preço unitário
+   - IVA (%)
+
+2. Calcular:
+   - `SUBTOTAL = QUANTIDADE × PRECO`
+   - `VALOR_IVA = SUBTOTAL × (IVA / 100)`
+   - `TOTAL = SUBTOTAL + VALOR_IVA`
+
+3. Apresentar fatura formatada no terminal.
+
+---
+
+## 🧠 Data Model
 
 ```cobol
-WORKING-STORAGE
 01 WS-CLIENTE        PIC X(30).
 01 WS-PRODUTO        PIC X(30).
 01 WS-QUANTIDADE     PIC 9(4).
@@ -32,43 +48,38 @@ WORKING-STORAGE
 01 WS-TOTAL          PIC 9(7)V99.
 ```
 
----
+### Notas Técnicas
 
-## 🔢 Fórmulas
-
-```
-SUBTOTAL = QUANTIDADE × PREÇO
-VALOR_IVA = SUBTOTAL × (IVA / 100)
-TOTAL = SUBTOTAL + VALOR_IVA
-```
+- `V` representa posição decimal implícita.
+- Todos os cálculos são feitos com aritmética inteira com ponto decimal virtual.
+- Percentagem é ajustada com `DIVIDE 100`.
 
 ---
 
-## 🏗 Estrutura do Programa
+## 🏗 Program Structure
 
-1. **IDENTIFICATION DIVISION** — Nome do programa  
-2. **DATA DIVISION** — WORKING-STORAGE com todos os campos  
-3. **PROCEDURE DIVISION** — Fluxo:
+```
+IDENTIFICATION DIVISION
+DATA DIVISION
+WORKING-STORAGE SECTION
+PROCEDURE DIVISION
+```
+
+Fluxo lógico:
 
 ```
 INICIO
- ↓
-Ler dados
- ↓
-Calcular subtotal
- ↓
-Calcular IVA
- ↓
-Calcular total
- ↓
-Mostrar fatura formatada
- ↓
-Terminar
+  → Captura de dados (ACCEPT)
+  → Cálculo de subtotal (MULTIPLY)
+  → Cálculo de IVA
+  → Cálculo de total (ADD)
+  → Output formatado (DISPLAY)
+STOP RUN
 ```
 
 ---
 
-## 🖨 Output Esperado
+## 🖨 Example Output
 
 ```
 -------------------------------
@@ -88,38 +99,60 @@ TOTAL: 110.70
 
 ---
 
-## ⚙️ Conceitos Técnicos Aplicados
+## ⚙️ Concepts Applied
 
-- PIC 9V99  
-- Cálculos com decimais  
-- MOVE  
-- MULTIPLY  
-- DIVIDE  
-- DISPLAY estruturado  
-
----
-
-## 📈 Limitações
-
-- Não guarda ficheiro  
-- Não valida input  
-- Apenas um produto  
-- Não suporta múltiplas linhas  
+- PIC 9(n)V99
+- ACCEPT
+- DISPLAY
+- MULTIPLY
+- DIVIDE
+- ADD
+- Structured procedural flow
+- Terminal formatting
 
 ---
 
-## 🚀 Desafio Extra (opcional)
-
-- Permitir múltiplos produtos  
-- Permitir repetir o processo  
-- Adicionar desconto  
-- Criar número automático de fatura  
-
----
-
-## ⚡ Commit
+## 🧪 Compilation
 
 ```bash
-git add day01-invoice-generator/invoice.cob
-git commit -m "Day 01 — Invoice Generator (calculations and formatted output)"
+cobc -x invoice.cob -o invoice
 ```
+
+Run:
+
+```bash
+./invoice
+```
+
+---
+
+## 📉 Current Limitations
+
+- Apenas um produto por fatura
+- Não persiste dados em ficheiro
+- Sem validação de input
+- Sem número automático de fatura
+- Sem tratamento de erros
+
+---
+
+## 🚀 Possible Improvements
+
+- Loop para múltiplos produtos
+- Sistema de descontos
+- Geração automática de número de fatura
+- Escrita em ficheiro sequencial
+- Formatação monetária avançada
+- Separação em parágrafos modulares
+
+---
+
+## 📌 Commit Message
+
+```
+Day 01 — Invoice Generator (calculations and formatted output)
+```
+
+---
+
+Este primeiro dia foca-se em **precisão numérica e estrutura formal COBOL**, estabelecendo base sólida para exercícios com ficheiros e processamento batch nos próximos dias.
