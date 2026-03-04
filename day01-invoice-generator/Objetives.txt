@@ -1,0 +1,18 @@
+Simular geração de uma fatura simples com:
+
+Nome do cliente
+
+Produto
+
+Quantidade
+
+Preço unitário
+
+IVA (%)
+
+Cálculo de subtotal
+
+Cálculo de imposto
+
+Total final formatado
+
