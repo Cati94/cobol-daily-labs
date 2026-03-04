@@ -49,7 +49,7 @@
 
            
            DISPLAY "  ".
-           DISPLAY "MORADA" WS-MORADA
+           DISPLAY "MORADA : " WS-MORADA
            DISPLAY "NIF " WS-NIF
            DISPLAY "Subtotal: " WS-SUBTOTAL
            DISPLAY "IVA (" WS-IVA "%): " WS-VALOR-IVA
