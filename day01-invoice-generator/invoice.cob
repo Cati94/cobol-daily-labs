@@ -8,11 +8,12 @@
        01 WS-QUANTIDADE     PIC 9(4).
        01 WS-PRECO          PIC 9(5)V99.
        01 WS-IVA            PIC 9(2)V99.
-
+       01 WS-NIF            PIC 9(9)V99.
+       01 WS-MORADA         PIC X(30).
        01 WS-SUBTOTAL       PIC 9(7)V99.
        01 WS-VALOR-IVA      PIC 9(7)V99.
        01 WS-TOTAL          PIC 9(7)V99.
-
+       
        PROCEDURE DIVISION.
        
 
@@ -35,14 +36,21 @@
            DISPLAY "IVA (%): "
            ACCEPT WS-IVA
 
-         
+           DISPLAY "NIF: "
+           ACCEPT WS-NIF
+           
+           DISPLAY "MORADA: "
+           ACCEPT WS-MORADA
+        
            MULTIPLY WS-PRECO BY WS-QUANTIDADE GIVING WS-SUBTOTAL
            MULTIPLY WS-SUBTOTAL BY WS-IVA GIVING WS-VALOR-IVA
            DIVIDE 100 INTO WS-VALOR-IVA
            ADD WS-SUBTOTAL TO WS-VALOR-IVA GIVING WS-TOTAL
 
            
-           DISPLAY " ".
+           DISPLAY "  ".
+           DISPLAY "MORADA" WS-MORADA
+           DISPLAY "NIF " WS-NIF
            DISPLAY "Subtotal: " WS-SUBTOTAL
            DISPLAY "IVA (" WS-IVA "%): " WS-VALOR-IVA
            DISPLAY "-------------------------------"
