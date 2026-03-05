@@ -1,0 +1,99 @@
+Objetivo
+
+Criar um programa COBOL que calcula:
+
+Salário bruto
+
+Desconto IRS
+
+Desconto Segurança Social
+
+Salário líquido
+
+Simula um mini sistema de processamento salarial.
+
+📊 Modelo de Dados
+
+WORKING-STORAGE:
+
+01 WS-NOME              PIC X(30).
+01 WS-SALARIO-BRUTO     PIC 9(7)V99.
+
+01 WS-TAXA-IRS          PIC 9(2)V99 VALUE 21.00.
+01 WS-TAXA-SS           PIC 9(2)V99 VALUE 11.00.
+
+01 WS-DESCONTO-IRS      PIC 9(7)V99.
+01 WS-DESCONTO-SS       PIC 9(7)V99.
+
+01 WS-SALARIO-LIQUIDO   PIC 9(7)V99.
+🧮 Fórmulas
+DESCONTO_IRS = SALARIO_BRUTO * (IRS / 100)
+
+DESCONTO_SS = SALARIO_BRUTO * (SS / 100)
+
+SALARIO_LIQUIDO =
+SALARIO_BRUTO - DESCONTO_IRS - DESCONTO_SS
+🏗 Estrutura do Programa
+
+Fluxo lógico:
+
+INICIO
+ ↓
+Ler nome do funcionário
+ ↓
+Ler salário bruto
+ ↓
+Calcular desconto IRS
+ ↓
+Calcular desconto Segurança Social
+ ↓
+Calcular salário líquido
+ ↓
+Mostrar recibo
+ ↓
+Terminar
+🖨 Output Esperado
+----------------------------------
+         RECIBO SALARIAL
+----------------------------------
+
+Funcionário: Ana Costa
+
+Salário Bruto:        1500.00
+IRS (21%):             315.00
+Segurança Social:      165.00
+
+----------------------------------
+Salário Líquido:      1020.00
+----------------------------------
+ Conceitos COBOL praticados
+
+Hoje vais reforçar:
+
+✔ cálculos com percentagens
+✔ uso de VALUE para constantes
+✔ operações matemáticas
+✔ organização de variáveis
+✔ saída formatada
+
+📈 Limitações (colocar no README do dia)
+
+Taxas fixas
+
+Não suporta múltiplos funcionários
+
+Não guarda ficheiros
+
+Não valida input
+
+Desafio Extra (se quiseres subir o nível)
+
+Adicionar:
+
+1️⃣ Bónus opcional
+SALARIO_FINAL = SALARIO_LIQUIDO + BONUS
+2️⃣ Menu repetir cálculo
+Deseja calcular outro salário? (S/N)
+3️⃣ Validação
+
+Não permitir salário negativo.
