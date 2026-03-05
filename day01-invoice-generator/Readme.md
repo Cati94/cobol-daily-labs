@@ -1,5 +1,8 @@
 # Day 01 — Invoice Generator
 
+
+![Logo](https://github.com/Cati94/cobol-daily-labs/blob/main/day01-invoice-generator/Invoice.png)
+
 ## 📦 Overview
 
 Primeiro exercício do desafio **30 Days of COBOL**.
