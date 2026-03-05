@@ -1,5 +1,8 @@
 # 30 Days of COBOL — Practical Systems Challenge
 
+![Logo](https://github.com/Cati94/cobol-daily-labs/blob/main/cobol30dias.png)
+
+
 Este repositório é dedicado a **30 dias consecutivos de desenvolvimento prático em COBOL**, com foco em construir sistemas cada vez mais próximos de cenários empresariais reais.
 
 O objetivo principal é desenvolver competências em:
