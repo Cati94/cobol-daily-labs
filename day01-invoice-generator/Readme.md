@@ -146,11 +146,6 @@ Run:
 - Separação em parágrafos modulares
 
 ---
-
-## 📌 Commit Message
-
-```
-Day 01 — Invoice Generator (calculations and formatted output)
 ```
 
 ---
