@@ -1,5 +1,8 @@
 # Day 02 — Payroll Calculator
 
+![Logo](https://github.com/Cati94/cobol-daily-labs/blob/main/day02-payroll-calculator/Payroll.png)
+
+
 Programa COBOL que calcula salário líquido a partir de um salário bruto,
 aplicando deduções de IRS e Segurança Social.
 
