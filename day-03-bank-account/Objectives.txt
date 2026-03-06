@@ -1,0 +1,42 @@
+Dia 3 — Simulador de Conta Bancária
+Objetivo
+
+Criar um programa COBOL que simula operações básicas de uma conta bancária:
+
+consultar saldo
+
+depositar dinheiro
+
+levantar dinheiro
+
+sair do sistema
+
+O programa deve usar um menu interativo em loop.
+
+Conceitos COBOL praticados
+
+Este exercício introduz:
+
+estrutura de menu
+
+PERFORM UNTIL
+
+decisão com IF
+
+operações aritméticas
+
+estado persistente em memória (saldo)
+
+Nível atingido
+
+Depois deste exercício já sabes usar:
+
+variáveis financeiras
+
+menus
+
+loops
+
+condições
+
+operações bancárias básicas
