@@ -1,6 +1,8 @@
  
 # Sistema Bancário em COBOL
 
+![Logo](https://github.com/Cati94/cobol-daily-labs/blob/main/day-03-bank-account/sistemabancario.png)
+
 Este é um **programa simples de sistema bancário** implementado em COBOL, desenvolvido como exercício de prática da linguagem. Permite gerenciar clientes, depósitos, levantamentos e consultas de saldo, além de gerar um relatório final com o total de operações.
 
 ## Funcionalidades
