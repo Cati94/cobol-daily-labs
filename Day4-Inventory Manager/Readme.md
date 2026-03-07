@@ -1,5 +1,7 @@
 # Inventory System - COBOL
 
+![Logo](https://github.com/Cati94/cobol-daily-labs/blob/main/Day4-Inventory%20Manager/inventory.png)
+
 Um sistema simples de gestão de inventário desenvolvido em **COBOL**, permitindo listar produtos, adicionar e remover stock, consultar produtos e criar novos produtos.
 
 ---
