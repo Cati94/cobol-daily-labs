@@ -1,0 +1,50 @@
+Objetivo
+
+Criar um programa que guarda vários produtos e permite:
+
+listar produtos
+
+atualizar stock
+
+consultar um produto
+
+sair
+
+
+Novo conceito aprendido
+OCCURS (tabelas)
+
+Em COBOL:
+
+01 WS-PRODUTOS.
+   05 WS-PRODUTO OCCURS 5 TIMES.
+      10 WS-NOME   PIC X(20).
+      10 WS-STOCK  PIC 9(4).
+
+Isto cria 5 produtos.
+
+Visualmente:
+
+Produto 1
+Produto 2
+Produto 3
+Produto 4
+Produto 5
+
+
+Estrutura do programa
+
+Fluxo:
+
+INICIO
+ ↓
+inicializar produtos
+ ↓
+menu
+ ↓
+1 listar produtos
+2 atualizar stock
+3 consultar produto
+4 sair
+ ↓
+repetir
