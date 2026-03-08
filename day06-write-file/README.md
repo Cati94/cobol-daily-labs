@@ -1,5 +1,7 @@
 # Day 6 – Write to a Sequential File in COBOL
 
+![Logo](https://github.com/Cati94/cobol-daily-labs/blob/main/day06-write-file/escritaeleituraficheiro.png)
+
 ## 🎯 Objetivos
 
 - Aprender a criar e escrever num ficheiro
