@@ -1,0 +1,79 @@
+🎯 Objectives
+
+Learn how to define and open a file
+
+Read records from a sequential file
+
+Display the contents of a file
+
+Understand the basic COBOL file structure
+
+🧠 Concept
+
+Create a COBOL program that reads a text file containing customer names and displays each name on the screen.
+
+The program will:
+
+Open a file in INPUT mode.
+
+Read each record sequentially.
+
+Display the record on screen.
+
+Stop when reaching the end of file.
+
+This reflects how many legacy systems process batch data such as customer lists, payroll records, or transaction logs.
+
+📚 Concepts Practiced
+
+FILE-CONTROL
+
+SELECT statement
+
+OPEN INPUT
+
+READ
+
+AT END
+
+CLOSE
+
+📂 Example Input File
+customers.txt
+
+Example content:
+
+John Smith
+Maria Silva
+Pedro Costa
+Ana Ferreira
+
+Example Output
+Customer List
+-------------
+
+John Smith
+Maria Silva
+Pedro Costa
+Ana Ferreira
+
+File
+day05-read-file.cob
+
+Skills Developed
+
+Working with sequential files
+
+Reading records
+
+End-of-file detection
+
+Batch-style processing
+
+📈 Learning Progression
+Day	Topic
+Day 1	Calculations
+Day 2	Input + IF
+Day 3	Loops
+Day 4	Tables
+Day 5	File Reading
