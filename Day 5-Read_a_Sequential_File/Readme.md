@@ -1,5 +1,7 @@
 # Day 5 – Reading a Sequential File in COBOL
 
+![Logo](https://github.com/Cati94/cobol-daily-labs/blob/main/Day%205-Read_a_Sequential_File/readfile.png) 
+
 ## 🎯 Objective
 
 Learn how to read data from a sequential file using COBOL.
