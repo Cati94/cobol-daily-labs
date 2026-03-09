@@ -1,0 +1,59 @@
+Objetivos
+
+Ler dados de um ficheiro
+
+Processar os registos
+
+Escrever resultados num novo ficheiro
+
+Simular processamento batch
+
+Conceito
+
+O programa vai:
+
+Ler nomes do ficheiro customers.txt
+
+Processar cada registo
+
+Criar um novo ficheiro customers_report.txt
+
+Guardar os nomes com numeração
+
+Exemplo:
+
+customers.txt
+John Smith
+Maria Silva
+Pedro Costa
+customers_report.txt
+1 - John Smith
+2 - Maria Silva
+3 - Pedro Costa
+
+Conceitos COBOL aprendidos
+
+Day 7 adiciona conceitos importantes:
+
+Conceito	Explicação
+READ	Ler registos de ficheiro
+WRITE	Criar novo ficheiro
+STRING	Construir texto
+COUNTER	Numeração de registos
+PROCESSAMENTO BATCH	Ler → Processar → Gravar
+Estrutura da pasta
+day07/
+│
+├── day07-file-processing.cob
+├── customers.txt
+├── customers_report.txt
+└── README.md
+Skills novas do Day 7
+
+Processamento real de ficheiros
+
+Geração de relatórios
+
+Manipulação de strings
+
+Lógica batch usada em bancos, seguros e ERP
