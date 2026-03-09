@@ -14,7 +14,7 @@ básica de programas COBOL com ficheiros
 ## Fluxo do Programa
 
 ![Fluxo do
-Programa](an_educational_flowchart_style_digital_illustratio.png)
+Programa](https://github.com/Cati94/cobol-daily-labs/blob/main/fileprocessing.png)
 
 ## Funcionamento
 
