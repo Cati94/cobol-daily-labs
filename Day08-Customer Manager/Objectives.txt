@@ -1,0 +1,52 @@
+Objetivo
+
+Criar um programa que permita:
+
+Adicionar cliente
+
+Listar clientes
+
+Procurar cliente por ID
+
+Sair
+
+Tudo guardado num ficheiro de dados.
+
+Estrutura do Projeto
+customer-manager/
+│
+├── main.cbl
+├── customers.dat
+└── README.md
+🧠 Estrutura dos dados
+
+Cada cliente terá:
+
+ID
+Nome
+Email
+
+
+🖥️ Exemplo de utilização
+==== CUSTOMER MANAGER ====
+
+1 - Add Customer
+2 - List Customers
+3 - Search Customer
+4 - Exit
+
+Option: 1
+
+Customer ID: 001
+Customer Name: Ana
+Customer Email: ana@email.com
+Customer saved.
+⭐ Porque este projeto é melhor
+
+✔ Menu interativo
+✔ Várias operações
+✔ Ficheiro persistente
+✔ Estrutura de dados
+✔ Uso de PERFORM, EVALUATE, READ, WRITE
+
+Isto já parece mini software real em COBOL.
