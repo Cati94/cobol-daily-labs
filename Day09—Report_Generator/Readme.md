@@ -1,5 +1,8 @@
 # Day 9 — Sales Report Generator (COBOL)
 
+![Logo](https://github.com/Cati94/cobol-daily-labs/blob/main/Day09%E2%80%94Report_Generator/salesreport.png)
+
+
 ## Overview
 
 This project is part of the **30 Days of COBOL Challenge**.
