@@ -1,0 +1,42 @@
+Objetivo
+
+Criar um programa que:
+
+Lê um ficheiro de vendas
+
+Calcula totais
+
+Gera um relatório formatado
+
+Estrutura do Projeto
+Day09-Sales-Report
+│
+├── src
+│   └── sales-report.cbl
+│
+├── data
+│   └── sales.dat
+│
+└── output
+    └── report.txt
+Exemplo sales.dat
+001 120
+002 350
+003 200
+004 100
+
+Formato:
+
+PRODUCT-ID   SALE-VALUE
+
+
+
+leitura de ficheiros (READ)
+
+controlo de EOF
+
+geração de relatórios
+
+escrita em ficheiros (WRITE)
+
+acumulação de totais
