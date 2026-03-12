@@ -1,5 +1,7 @@
 # Day 10 — COBOL Log Analyzer
 
+![Logo](https://github.com/Cati94/cobol-daily-labs/blob/main/Day%2010%20%E2%80%94%20System%20Log%20Analyzer/loganalyser.png) 
+
 ## Overview
 
 This program is a **COBOL log analysis tool** that reads a system log file, counts different types of events, generates a report file, and displays the generated report in the terminal.
