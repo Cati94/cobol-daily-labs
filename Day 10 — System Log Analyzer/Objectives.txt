@@ -1,0 +1,13 @@
+Objetivo
+
+Criar um programa que:
+
+Lê um ficheiro de logs do sistema
+
+Identifica o tipo de evento
+
+Conta quantos eventos existem de cada tipo
+
+Gera um relatório de estatísticas
+
+Este tipo de programa é típico em ambientes de IBM z/OS, onde muitos processos são analisados através de logs.
