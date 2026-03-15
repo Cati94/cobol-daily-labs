@@ -2,6 +2,9 @@
 
 *(Aligned with IBM COBOL Basic Testing and Debugging)*
 
+![Logo](https://github.com/Cati94/cobol-daily-labs/blob/main/Day12%20%E2%80%94Payroll_System/payrollprocessingsystem.png)
+
+
 ## Objective
 
 Develop a simple **COBOL payroll processing program** that reads employee data from a file, calculates salaries, and generates a report.
