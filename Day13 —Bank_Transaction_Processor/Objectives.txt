@@ -1,0 +1,23 @@
+Objetivo
+
+Criar um programa COBOL que processe transações bancárias a partir de um ficheiro e calcule o saldo final de cada conta.
+
+O sistema deve:
+
+Ler um ficheiro transactions.dat
+
+Processar depósitos (D) e levantamentos (W)
+
+Atualizar os saldos das contas
+
+Mostrar as operações no ecrã
+
+Apresentar um relatório final
+
+Este desafio é muito próximo de sistemas reais de mainframe porque trabalha com:
+
+transações
+
+processamento batch
+
+atualização de estado (saldo)
