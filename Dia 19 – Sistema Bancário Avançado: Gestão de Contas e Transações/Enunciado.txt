@@ -1,0 +1,27 @@
+Neste exercício, vais criar um programa em COBOL que simula um sistema bancário completo, com funcionalidades de gestão de contas, depósitos, levantamentos e histórico de transações. Este programa deverá utilizar ficheiros sequenciais para armazenar informações persistentes e incluir validação de dados do utilizador.
+
+Funcionalidades obrigatórias:
+
+Gestão de contas:
+Criar uma nova conta (ID único, nome do titular, saldo inicial).
+Consultar dados de uma conta existente.
+Atualizar informações do titular (nome ou contato).
+Transações bancárias:
+Realizar depósitos e levantamentos, validando se existe saldo suficiente.
+Registrar cada transação num ficheiro histórico (transactions.dat) com data, tipo (depósito/levantamento), valor e ID da conta.
+Validação:
+Se o ID da conta não existir, mostrar mensagem de erro.
+Não permitir depósitos ou levantamentos com valores negativos.
+Garantir que os IDs das contas são únicos.
+Relatórios:
+Listar todas as contas com saldo atual.
+Listar todas as transações de uma conta específica.
+Menu interativo:
+O programa deve apresentar um menu principal com opções para cada funcionalidade.
+O utilizador pode escolher operações até decidir sair.
+Objetivos de aprendizagem
+Trabalhar com ficheiros sequenciais em COBOL.
+Praticar validação de dados e erros de input.
+Implementar transações e registo histórico.
+Desenvolver um menu interativo e loops de navegação.
+Aprender a manipular arrays ou tabelas de contas em memória temporária.
