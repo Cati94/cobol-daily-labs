@@ -1,0 +1,24 @@
+Criar um programa COBOL com menu interativo que permite:
+
+Consultar contas
+Depositar dinheiro
+Levantar dinheiro
+Guardar alterações em ficheiro
+
+👉 Isto simula um sistema bancário básico.
+
+Funcionalidades
+
+O programa deve permitir:
+
+1 - Listar contas
+2 - Depositar
+3 - Levantar
+4 - Sair
+
+O que aprendeste aqui (muito importante)
+ACCEPT → input do utilizador
+Menu interativo
+Estrutura em memória (array OCCURS)
+Persistência (ler → alterar → guardar)
+Separação de lógica (LOAD / SAVE / PROCESS)
