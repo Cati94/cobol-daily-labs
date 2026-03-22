@@ -1,0 +1,44 @@
+Criar um programa em COBOL que leia um ficheiro de contas bancárias e gere um relatório resumido com estatísticas financeiras.
+
+O programa deverá:
+
+Ler registos de contas a partir de um ficheiro.
+Processar o saldo de cada conta.
+Identificar:
+saldo positivo
+saldo negativo
+saldo zero
+Calcular estatísticas globais.
+
+Este exercício introduz conceitos muito usados em sistemas bancários em mainframe, como relatórios batch.
+
+Requisitos do programa
+
+O programa deve:
+
+Abrir o ficheiro de contas.
+Ler cada registo.
+Determinar o tipo de saldo:
+positivo
+negativo
+zero
+Contar:
+número total de contas
+contas com saldo positivo
+contas com saldo negativo
+contas com saldo zero
+Calcular:
+soma total dos saldos
+saldo médio
+
+Conceitos COBOL praticados
+
+Este exercício trabalha:
+
+FILE SECTION
+READ UNTIL EOF
+IF / ELSE
+Contadores
+Acumuladores
+Cálculo de média
+Relatórios batch

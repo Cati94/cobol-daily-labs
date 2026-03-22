@@ -1,0 +1,75 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. ACCOUNT-REPORT.
+
+       ENVIRONMENT DIVISION.
+       INPUT-OUTPUT SECTION.
+       FILE-CONTROL.
+           SELECT ACCOUNT-FILE ASSIGN TO "accounts.dat"
+               ORGANIZATION IS LINE SEQUENTIAL.
+
+       DATA DIVISION.
+       FILE SECTION.
+
+       FD ACCOUNT-FILE.
+       01 ACCOUNT-RECORD.
+          05 ACCOUNT-ID        PIC 9(4).
+          05 ACCOUNT-BALANCE   PIC S9(7)V99.
+
+       WORKING-STORAGE SECTION.
+       01 EOF-FLAG             PIC X VALUE "N".
+       01 TOTAL-ACCOUNTS       PIC 9(5) VALUE 0.
+       01 POSITIVE-COUNT       PIC 9(5) VALUE 0.
+       01 NEGATIVE-COUNT       PIC 9(5) VALUE 0.
+       01 ZERO-COUNT           PIC 9(5) VALUE 0.
+       01 TOTAL-BALANCE        PIC S9(9)V99 VALUE 0.
+       01 AVERAGE-BALANCE      PIC S9(9)V99 VALUE 0.
+
+       PROCEDURE DIVISION.
+
+       MAIN-PROCEDURE.
+           OPEN INPUT ACCOUNT-FILE
+
+           PERFORM UNTIL EOF-FLAG = "Y"
+               READ ACCOUNT-FILE
+                   AT END
+                       MOVE "Y" TO EOF-FLAG
+                   NOT AT END
+                       PERFORM PROCESS-ACCOUNT
+               END-READ
+           END-PERFORM
+
+           IF TOTAL-ACCOUNTS > 0
+               COMPUTE AVERAGE-BALANCE = TOTAL-BALANCE / TOTAL-ACCOUNTS
+           END-IF
+
+           PERFORM DISPLAY-REPORT
+
+           CLOSE ACCOUNT-FILE
+           STOP RUN.
+
+       PROCESS-ACCOUNT.
+           ADD 1 TO TOTAL-ACCOUNTS
+           ADD ACCOUNT-BALANCE TO TOTAL-BALANCE
+
+           IF ACCOUNT-BALANCE > 0
+               ADD 1 TO POSITIVE-COUNT
+           ELSE
+               IF ACCOUNT-BALANCE < 0
+                   ADD 1 TO NEGATIVE-COUNT
+               ELSE
+                   ADD 1 TO ZERO-COUNT
+               END-IF
+           END-IF.
+
+       DISPLAY-REPORT.
+           DISPLAY "BANK ACCOUNT REPORT"
+           DISPLAY "-----------------------------"
+           DISPLAY "TOTAL ACCOUNTS: " TOTAL-ACCOUNTS
+           DISPLAY "POSITIVE BALANCE: " POSITIVE-COUNT
+           DISPLAY "NEGATIVE BALANCE: " NEGATIVE-COUNT
+           DISPLAY "ZERO BALANCE: " ZERO-COUNT
+           DISPLAY " "
+           DISPLAY "TOTAL BALANCE: " TOTAL-BALANCE
+           DISPLAY "AVERAGE BALANCE: " AVERAGE-BALANCE
+           DISPLAY " "
+           DISPLAY "PROCESSING COMPLETE".
