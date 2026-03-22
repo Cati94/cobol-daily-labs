@@ -1,0 +1,18 @@
+Descrição do Exercício
+
+Neste dia, vamos desenvolver um sistema simples de faturação, que permite:
+
+Gerir produtos com preço unitário e quantidade em stock.
+Criar faturas associadas a clientes.
+Calcular valores totais, impostos e descontos.
+Guardar faturas num ficheiro sequencial.
+Listar produtos e faturação existente.
+
+O foco é praticar ficheiros sequenciais, cálculos aritméticos, loops e menus interativos, e registro persistente de dados.
+
+Objetivos de Aprendizagem
+Manipular ficheiros sequenciais de produtos e faturas.
+Fazer cálculos automáticos (total, impostos, desconto).
+Criar menus interativos para diferentes operações.
+Validar entradas e prevenir erros de faturação.
+Preparar dados para futuras análises financeiras.
