@@ -1,0 +1,17 @@
+Objetivos
+
+Neste dia vais aprender:
+
+Filtrar dados (tipo de transação)
+Fazer agregações (máximo, mínimo, totais)
+Criar relatórios mais “analíticos”
+Trabalhar com múltiplos loops de leitura
+💻 Código COBOL – Dia 23
+
+👉 Novas funcionalidades incluídas:
+
+Total de créditos e débitos
+Maior saldo
+Menor saldo
+Contagem por tipo de transação
+
