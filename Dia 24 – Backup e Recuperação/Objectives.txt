@@ -1,0 +1,14 @@
+🎯 Objetivo
+
+Garantir que os dados:
+
+Não se perdem
+Podem ser recuperados
+Têm cópias de segurança
+💻 Código Completo – BANK-SYSTEM-D24
+
+👉 Inclui:
+
+Backup de contas
+Backup de transações
+Restore (recuperação).
