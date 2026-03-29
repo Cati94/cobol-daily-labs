@@ -1,0 +1,13 @@
+Objetivo
+
+Transformar o sistema num motor de pesquisa simples, permitindo:
+
+🔎 Procurar contas por nome
+📅 Filtrar transações por intervalo de datas
+📊 Melhorar navegação e análise
+💻 Código Completo – BANK-SYSTEM-D25
+
+👉 Funcionalidades incluídas:
+
+Pesquisa por nome (parcial)
+Filtro de transações por datas
