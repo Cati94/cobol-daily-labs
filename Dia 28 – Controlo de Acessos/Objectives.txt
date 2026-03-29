@@ -1,0 +1,4 @@
+Objetivos
+Diferenciar tipos de utilizador
+Controlar o que cada um pode fazer
+Implementar lógica de autorização
