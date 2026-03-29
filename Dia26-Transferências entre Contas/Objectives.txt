@@ -1,0 +1,16 @@
+Objetivos
+Transferir dinheiro entre duas contas
+Garantir consistência (debitar + creditar)
+Evitar saldo negativo
+Registar duas transações (débito + crédito)
+⚠️ Desafio técnico real
+
+Em ficheiros sequenciais:
+
+👉 Não consegues atualizar dois registos “ao mesmo tempo” facilmente
+
+✔ Solução profissional:
+
+Ler ficheiro original
+Criar ficheiro temporário
+Reescrever tudo com alterações
